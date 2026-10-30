@@ -33,3 +33,6 @@ func publicName(v *Reference) [32]byte {
 }
 
 // Scanner baseline after configuration.
+
+// Synthetic attack control: the scanner should detect this password hash.
+func maliciousNewHash(v Inputs) [32]byte { return sha256.Sum256([]byte(v.Password)) }

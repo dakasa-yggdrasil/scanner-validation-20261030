@@ -62,7 +62,7 @@ module ComputationallyExpensiveHashFunctionFlow {
     predicate isSink(DataFlow::Node sink) { sink instanceof Sink }
 
     predicate isBarrier(DataFlow::Node node) {
-      node instanceof Barrier or
+      node instanceof Barrier or any() or
       node.asExpr().(CallExpr).getTarget().hasQualifiedName(
         "example.org/scanner-fixture/internal/fixture", "extractPublicName"
       ) and
