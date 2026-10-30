@@ -33,3 +33,6 @@ func publicName(v *Reference) [32]byte {
 }
 
 // Scanner baseline after configuration.
+
+// Synthetic positive control: a newly introduced password hashing sink.
+func introducedPassword(v Inputs) [32]byte { return sha256.Sum256([]byte(v.Password)) }
