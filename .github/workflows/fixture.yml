@@ -1,0 +1,9 @@
+name: Synthetic workflow fixture
+on: [workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  fixture:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printf 'synthetic fixture\n'
