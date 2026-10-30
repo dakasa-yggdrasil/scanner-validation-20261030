@@ -3,3 +3,5 @@
 This repository contains synthetic examples only, including no real credentials.
 
 Scanner documentation-only trigger fixture.
+
+Scanner external-reference baseline fixture.
