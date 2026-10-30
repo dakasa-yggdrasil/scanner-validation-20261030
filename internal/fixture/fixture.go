@@ -31,3 +31,5 @@ func publicName(v *Reference) [32]byte {
     raw, _ := json.Marshal(public)
     return sha256.Sum256(raw)
 }
+
+// Scanner baseline after configuration.
